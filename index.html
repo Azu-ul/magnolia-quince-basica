@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15 Arianna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Josefin+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- AUDIO TOCADISCOS -->
+  <audio id="bgAudio" loop>
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+  </audio>
+  <div id="audio-widget" onclick="toggleAudio()" title="Reproducir música">
+    <div id="audio-label">¡Dale play al vinilo!</div>
+    <div class="turntable">
+      <div class="disc" id="disc">
+        <div class="disc-hole"></div>
+      </div>
+      <div class="needle" id="needle">
+        <div class="needle-arm"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <div class="hero">
+    <div class="hero-content">
+      <span class="hero-sub">Bienvenidos a</span>
+      <div class="hero-tag">Mis 15 años</div>
+      <h1 class="hero-title">Arianna</h1>
+    </div>
+    <div class="scroll-hint">
+      <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══ COUNTDOWN ══ -->
+  <div class="countdown-section">
+    <div class="section-inner">
+      <div class="css-calendar">
+        <div class="cal-header">
+          <div class="cal-month">Junio</div>
+          <div class="cal-year">2026</div>
+        </div>
+        <div class="cal-weekdays">
+          <div class="cal-weekday">Lu</div>
+          <div class="cal-weekday">Ma</div>
+          <div class="cal-weekday">Mi</div>
+          <div class="cal-weekday">Ju</div>
+          <div class="cal-weekday">Vi</div>
+          <div class="cal-weekday">Sá</div>
+          <div class="cal-weekday">Do</div>
+        </div>
+        <div class="cal-days">
+          <div class="cal-day">1</div>
+          <div class="cal-day">2</div>
+          <div class="cal-day">3</div>
+          <div class="cal-day">4</div>
+          <div class="cal-day">5</div>
+          <div class="cal-day">6</div>
+          <div class="cal-day">7</div>
+          <div class="cal-day">8</div>
+          <div class="cal-day">9</div>
+          <div class="cal-day">10</div>
+          <div class="cal-day">11</div>
+          <div class="cal-day">12</div>
+          <div class="cal-day">13</div>
+          <div class="cal-day birthday">14</div>
+          <div class="cal-day">15</div>
+          <div class="cal-day">16</div>
+          <div class="cal-day">17</div>
+          <div class="cal-day">18</div>
+          <div class="cal-day">19</div>
+          <div class="cal-day">20</div>
+          <div class="cal-day">21</div>
+          <div class="cal-day">22</div>
+          <div class="cal-day">23</div>
+          <div class="cal-day">24</div>
+          <div class="cal-day">25</div>
+          <div class="cal-day">26</div>
+          <div class="cal-day">27</div>
+          <div class="cal-day">28</div>
+          <div class="cal-day">29</div>
+          <div class="cal-day">30</div>
+          <div class="cal-day empty"></div>
+          <div class="cal-day empty"></div>
+          <div class="cal-day empty"></div>
+          <div class="cal-day empty"></div>
+          <div class="cal-day empty"></div>
+        </div>
+      </div>
+      <span class="eyebrow">La fecha</span>
+      <h2 class="section-title">14 de Junio</h2>
+      <p class="section-body" style="margin-bottom:28px">Sábado · 2026 · 21:00 hs.</p>
+      <div class="cd-label" id="faltan-label">Faltan...</div>
+      <div class="cd-label es-hoy" id="es-hoy-label" style="display:none">¡Es hoy!</div>
+      <div id="countdown">
+        <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><span class="cd-lbl">días</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><span class="cd-lbl">hs</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-lbl">min</span></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-lbl">seg</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ FIESTA ══ -->
+  <div class="stripe-a">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/1.svg" alt="" />
+      <h2 class="section-title">Te esperamos</h2>
+      <p class="section-body">
+        Sábado 14 de Junio de 2026<br>
+        21:00 hs.<br>
+        Salón Versailles<br>
+        Av. Independencia 3240, Mar del Plata.
+      </p>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0!2d-57.5580!3d-38.0055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9b7a8abcdef%3A0x0!2sAv.+Independencia+3240%2C+Mar+del+Plata!5e0!3m2!1ses!2sar!4v1700000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Salón Versailles">
+        </iframe>
+      </div>
+      <a class="btn"
+        href="https://www.google.com/maps/dir/?api=1&destination=Av.+Independencia+3240,+Mar+del+Plata,+Buenos+Aires,+Argentina"
+        target="_blank">Cómo llegar</a>
+    </div>
+  </div>
+
+  <!-- ══ GALERÍA ══ -->
+  <div class="stripe-b">
+    <div class="gallery-inner">
+      <div class="gallery-eyebrow">
+        <span class="eyebrow">Galería</span>
+        <h2 class="section-title" style="text-align:center">Momentos</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item" onclick="openModal(0)"><img src="fotoscumpleañera/1.jpg" alt="foto 1" /></div>
+        <div class="gallery-item" onclick="openModal(1)"><img src="fotoscumpleañera/2.jpg" alt="foto 2" /></div>
+        <div class="gallery-item" onclick="openModal(2)"><img src="fotoscumpleañera/3.jpg" alt="foto 3" /></div>
+        <div class="gallery-item" onclick="openModal(3)"><img src="fotoscumpleañera/4.jpg" alt="foto 4" /></div>
+        <div class="gallery-item" onclick="openModal(4)"><img src="fotoscumpleañera/5.jpg" alt="foto 5" /></div>
+        <div class="gallery-item" onclick="openModal(5)"><img src="fotoscumpleañera/6.jpg" alt="foto 6" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal" onclick="handleModalClick(event)">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <button class="modal-btn" onclick="prevPhoto(event)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <div class="modal-img-wrap">
+        <img class="modal-img" id="modal-img" src="" alt="" />
+      </div>
+      <button class="modal-btn" onclick="nextPhoto(event)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+      <div class="modal-dots" id="modal-dots"></div>
+    </div>
+  </div>
+
+  <!-- ══ DRESS CODE ══ -->
+  <div class="stripe-a">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/2.svg" alt="" />
+      <span class="eyebrow">Dress Code</span>
+      <h2 class="section-title">Elegante</h2>
+      <p class="section-body">Venite con tu mejor look para esta noche especial.</p>
+    </div>
+  </div>
+
+  <!-- ══ INSTAGRAM ══ -->
+  <div class="stripe-b">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/3.svg" alt="" />
+      <span class="eyebrow">Instagram</span>
+      <p class="insta-handle">@ariannaoficial</p>
+      <p class="section-body">
+        Preparate para esta gran noche.<br>
+        Seguime y etiquetame en tus fotos y videos.
+      </p>
+      <a class="btn outline" href="https://www.instagram.com/" target="_blank">Ver Instagram</a>
+    </div>
+  </div>
+
+  <!-- ══ CONFIRMACIÓN ══ -->
+  <div class="stripe-a">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/4.svg" alt="" />
+      <span class="eyebrow">Asistencia</span>
+      <h2 class="section-title">¿Venís?</h2>
+      <p class="section-body">Cuento con tu presencia. Confirmá antes del 1 de junio.</p>
+      <a class="btn" href="#" target="_blank">Confirmar asistencia</a>
+    </div>
+  </div>
+
+  <!-- ══ REGALO ══ -->
+  <div class="stripe-b">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/5.svg" alt="" />
+      <span class="eyebrow">Regalos</span>
+      <h2 class="section-title">El mejor regalo sos vos</h2>
+      <p class="section-body">
+        Pero si querés colaborar con mis sueños, te comparto los datos. ¡Muchas gracias!
+      </p>
+      <button class="btn outline" onclick="toggleRegalo()">Ver opciones de regalo</button>
+      <div class="regalo-details" id="regalo-details">
+        <div class="card">
+          <div class="card-title">Transferencia bancaria</div>
+          <ul>
+            <li>Nombre: Arianna Valentina Moreno</li>
+            <li>CBU: 0720199520000012345678</li>
+            <li>Alias: arianna.regalo</li>
+            <li>Banco Galicia</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Buzón de regalos</div>
+          <ul>
+            <li>El día del evento habrá un buzón para dejar obsequios personalmente.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ PLAYLIST ══ -->
+  <div class="stripe-a">
+    <div class="section-inner">
+      <img class="section-icon" src="assets/icons/6.svg" alt="" />
+      <span class="eyebrow">Playlist</span>
+      <h2 class="section-title">¿Qué no puede faltar?</h2>
+      <p class="section-body">
+        Ayudame sugiriendo las canciones que tienen que sonar esa noche.
+      </p>
+      <a class="btn" href="#" target="_blank">Sugerir canción</a>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-name">Arianna</div>
+    <div class="footer-line"></div>
+    <p class="footer-thanks">Gracias por acompañarme en este momento tan importante.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

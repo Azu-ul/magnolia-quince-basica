@@ -1,3 +1,18 @@
+// ── SOBRE INTRO ──
+function openEnvelope() {
+  const wrap = document.getElementById('envelopeWrap');
+  if (wrap.classList.contains('open')) return;
+  wrap.classList.add('open');
+  setTimeout(() => {
+    document.getElementById('envEnterBtn').classList.add('visible');
+  }, 900);
+}
+function enterSite() {
+  document.getElementById('envelope-screen').classList.add('hide');
+  document.body.style.overflow = '';
+}
+document.body.style.overflow = 'hidden';
+
 // ── COUNTDOWN ──
 const eventDate = new Date('2026-06-14T21:00:00-03:00');
 function pad(n) { return String(n).padStart(2, '0'); }

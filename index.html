@@ -14,6 +14,22 @@
 
 <body>
 
+  <!-- ══ SOBRE INTRO ══ -->
+<div id="envelope-screen">
+  <p class="env-hint">Tocá para abrir tu invitación</p>
+  <div class="envelope-wrap" id="envelopeWrap" onclick="openEnvelope()">
+    <div class="env-body">
+      <div class="env-inner">
+        <span class="env-inner-title">Arianna</span>
+        <span class="env-inner-sub">15 años · 14 de Junio</span>
+      </div>
+    </div>
+    <div class="env-flap-top"></div>
+    <div class="env-seal">♥</div>
+  </div>
+  <button class="env-enter-btn" id="envEnterBtn" onclick="enterSite()">Ver invitación →</button>
+</div>
+
   <!-- AUDIO TOCADISCOS -->
   <audio id="bgAudio" loop>
     <source src="assets/audio/musica.mp3" type="audio/mpeg">

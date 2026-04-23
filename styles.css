@@ -179,29 +179,34 @@ audio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0 24px 60px;
+  justify-content: center;
+  padding: 0 24px;
   text-align: center;
-  background-image: url("fotoscumpleañera/4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: var(--cream);
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 30%, rgba(0, 0, 0, 0.45) 70%, rgba(0, 0, 0, 0.65) 100%);
-}
-
 .hero-content {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.hero-corner {
+  position: absolute;
+  bottom: 0;
+  width: clamp(140px, 30vw, 320px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-corner-left {
+  left: 0;
+}
+
+.hero-corner-right {
+  right: 0;
 }
 
 /* ── HERO TAG mejorado ── */
@@ -213,18 +218,15 @@ audio {
   font-size: clamp(0.72rem, 2vw, 0.9rem);
   letter-spacing: 0.42em;
   text-transform: uppercase;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: var(--accent);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
   padding: 12px 28px;
   border-radius: 100px;
   margin-bottom: 20px;
   animation: fadeUp 0.9s ease both;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   font-weight: 600;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-tag::before,
@@ -232,21 +234,18 @@ audio {
   content: '✦';
   font-size: 0.6em;
   opacity: 0.8;
-  color: var(--accent3);
+  color: var(--accent2);
 }
 
 .hero-sub {
-  display: block;
   font-family: 'Josefin Sans', sans-serif;
   font-size: clamp(0.75rem, 2vw, 0.95rem);
   font-weight: 600;
   letter-spacing: 0.36em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--muted);
   margin-bottom: 10px;
   animation: fadeUp 0.8s ease both;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-  /* líneas decorativas a los lados */
   display: flex;
   align-items: center;
   gap: 14px;
@@ -258,7 +257,7 @@ audio {
   display: block;
   width: 36px;
   height: 1.5px;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--accent2);
   border-radius: 2px;
 }
 
@@ -266,11 +265,10 @@ audio {
   font-family: 'Yeseva One', serif;
   font-size: clamp(4.5rem, 16vw, 10rem);
   font-weight: 400;
-  color: #fff;
+  color: var(--text);
   line-height: 0.92;
   letter-spacing: -0.01em;
   animation: fadeUp 1s ease both 0.1s;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
 }
 
 /* ── SCROLL ARROW ── */
@@ -282,6 +280,10 @@ audio {
   opacity: 0.5;
   z-index: 1;
   animation: bounce 2.2s ease-in-out infinite;
+}
+
+.scroll-hint svg {
+  stroke: var(--muted);
 }
 
 @keyframes bounce {
@@ -375,9 +377,25 @@ audio {
 
 /* ── COUNTDOWN ── */
 .countdown-section {
+  position: relative;
   background: var(--cream);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+}
+
+.cal-corner {
+  position: absolute;
+  top: 0;
+  width: clamp(140px, 30vw, 320px);
+  pointer-events: none;
+  z-index: 1;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.cal-corner-left {
+  left: 0;
+}
+
+.cal-corner-right {
+  right: 0;
 }
 
 .countdown-section .section-inner {

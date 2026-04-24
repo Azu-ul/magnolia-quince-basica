@@ -58,12 +58,12 @@ function toggleRegalo() {
 
 // ── GALLERY MODAL ──
 const photos = [
-  'fotoscumpleañera/1.jpg',
-  'fotoscumpleañera/2.jpg',
-  'fotoscumpleañera/3.jpg',
-  'fotoscumpleañera/4.jpg',
-  'fotoscumpleañera/5.jpg',
-  'fotoscumpleañera/6.jpg'
+  'fotoscumpleañera/1.png',
+  'fotoscumpleañera/2.png',
+  'fotoscumpleañera/3.png',
+  'fotoscumpleañera/4.png',
+  'fotoscumpleañera/5.png',
+  'fotoscumpleañera/6.png'
 ];
 let currentPhoto = 0;
 let isAnimating = false;

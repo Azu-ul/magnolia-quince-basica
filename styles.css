@@ -1,13 +1,13 @@
 :root {
-  --bg: #f0ece4;
+  --bg: #EAEAEA;
   --surface: #faf8f4;
-  --text: #2a2620;
+  --text: #C08F90;
   --muted: #7a756e;
-  --accent: #4a7c59;
-  --accent2: #6fa67d;
-  --accent3: #c9ddc5;
-  --border: #d8d0c4;
-  --cream: #f5f0e8;
+  --accent: #C08F90;
+  --accent2: #C08F90;
+  --accent3: #EAEAEA;
+  --border: #D7B070;
+  --cream: #E8DAB2;
 }
 
 *,
@@ -182,7 +182,7 @@ audio {
   justify-content: center;
   padding: 0 24px;
   text-align: center;
-  background-color: var(--cream);
+  background-color: #EAEAEA;
   overflow: hidden;
 }
 
@@ -220,7 +220,7 @@ audio {
   text-transform: uppercase;
   color: var(--accent);
   background: var(--surface);
-  border: 1.5px solid var(--border);
+  border: 1.5px solid var(--accent);
   padding: 12px 28px;
   border-radius: 100px;
   margin-bottom: 20px;
@@ -378,7 +378,17 @@ audio {
 /* ── COUNTDOWN ── */
 .countdown-section {
   position: relative;
-  background: var(--cream);
+  background: var(--accent);
+  color: #EAEAEA;
+}
+
+.countdown-section .eyebrow,
+.countdown-section .section-title,
+.countdown-section .section-body,
+.countdown-section .cd-label,
+.countdown-section .cd-num,
+.countdown-section .cd-lbl {
+  color: #EAEAEA;
 }
 
 .cal-corner {
@@ -407,15 +417,26 @@ audio {
   font-size: 0.58rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #EAEAEA;
   margin-bottom: 20px;
 }
 
 .cd-label.es-hoy {
   font-family: 'Yeseva One', serif;
-  font-size: 2rem;
+  font-size: 2.4rem;
   letter-spacing: 0.04em;
-  color: var(--accent);
+  color: #FBD075;
+  background: linear-gradient(90deg, #FBD075, #fff, #FBD075);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
 }
 
 #countdown {
@@ -436,7 +457,7 @@ audio {
   font-family: 'Yeseva One', serif;
   font-size: clamp(2.4rem, 9vw, 4.2rem);
   font-weight: 400;
-  color: var(--text);
+  color: #EAEAEA;
   line-height: 1;
 }
 
@@ -445,14 +466,14 @@ audio {
   font-size: 0.5rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #EAEAEA;
   margin-top: 6px;
 }
 
 .cd-sep {
   font-family: 'Yeseva One', serif;
   font-size: clamp(1.8rem, 7vw, 3.2rem);
-  color: var(--accent2);
+  color: #EAEAEA;
   opacity: 0.7;
   padding: 0 2px;
   line-height: 1.05;
@@ -772,7 +793,7 @@ footer {
   font-family: 'Yeseva One', serif;
   font-size: clamp(2.8rem, 10vw, 5.5rem);
   font-weight: 400;
-  color: var(--cream);
+  color: #EAEAEA;
   letter-spacing: -0.01em;
   margin-bottom: 16px;
 }
@@ -988,7 +1009,7 @@ footer {
 #envelope-screen {
   position: fixed;
   inset: 0;
-  background: #1e3a28;
+  background: #C08F90;
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -1135,7 +1156,7 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 35%, #6fa67d, #3d6b4a);
+  background: radial-gradient(circle at 38% 35%, #C08F90, #a07075);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1185,7 +1206,7 @@ footer {
 
 /* ── STRIPE-B VERDE OSCURO ── */
 .stripe-b {
-  background: #1e3a28;
+  background: #C08F90;
 }
 
 .stripe-b .eyebrow {
@@ -1225,14 +1246,14 @@ footer {
 
 .stripe-b .btn {
   background: #f5f0e8;
-  color: #1e3a28;
+  color: #C08F90;
   border-color: #f5f0e8;
 }
 
 .stripe-b .btn:hover {
   background: var(--accent3);
   border-color: var(--accent3);
-  color: #1e3a28;
+  color: #C08F90;
 }
 
 .stripe-b .btn.outline {

@@ -907,7 +907,7 @@ footer {
 }
 
 .cal-day.birthday {
-  color: var(--accent);
+  color: #EAEAEA;
   font-weight: 600;
   z-index: 1;
 }
@@ -919,7 +919,7 @@ footer {
   left: 49%;
   transform: translate(-50%, -50%) scale(2.6);
   font-size: 1rem;
-  color: var(--accent3);
+  color: #C08F90;
   z-index: -1;
   line-height: 1;
 }

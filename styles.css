@@ -1160,7 +1160,7 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 35%, #6fa67d, #3d6b4a);
+  background: radial-gradient(circle at 38% 35%, var(--accent), var(--accent));
   display: flex;
   align-items: center;
   justify-content: center;

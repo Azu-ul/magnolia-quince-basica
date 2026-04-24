@@ -182,7 +182,7 @@ audio {
   justify-content: center;
   padding: 0 24px;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: var(--bg);
   overflow: hidden;
 }
 
@@ -300,7 +300,11 @@ audio {
 
 /* ── ALTERNATING SECTIONS ── */
 .stripe-a {
-  background: var(--surface);
+  background: var(--bg);
+}
+
+.stripe-a .section-title {
+  color: var(--text);
 }
 
 .stripe-b {
@@ -379,7 +383,7 @@ audio {
 .countdown-section {
   position: relative;
   background: var(--accent);
-  color: #EAEAEA;
+  color: var(--bg);
 }
 
 .countdown-section .eyebrow,
@@ -388,7 +392,7 @@ audio {
 .countdown-section .cd-label,
 .countdown-section .cd-num,
 .countdown-section .cd-lbl {
-  color: #EAEAEA;
+  color: var(--bg);
 }
 
 .cal-corner {
@@ -417,7 +421,7 @@ audio {
   font-size: 0.58rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: #EAEAEA;
+  color: var(--bg);
   margin-bottom: 20px;
 }
 
@@ -425,8 +429,8 @@ audio {
   font-family: 'Yeseva One', serif;
   font-size: 2.4rem;
   letter-spacing: 0.04em;
-  color: #FBD075;
-  background: linear-gradient(90deg, #FBD075, #fff, #FBD075);
+  color: var(--accent3);
+  background: linear-gradient(90deg, var(--accent3), var(--surface), var(--accent3));
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -457,7 +461,7 @@ audio {
   font-family: 'Yeseva One', serif;
   font-size: clamp(2.4rem, 9vw, 4.2rem);
   font-weight: 400;
-  color: #EAEAEA;
+  color: var(--bg);
   line-height: 1;
 }
 
@@ -466,14 +470,14 @@ audio {
   font-size: 0.5rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #EAEAEA;
+  color: var(--bg);
   margin-top: 6px;
 }
 
 .cd-sep {
   font-family: 'Yeseva One', serif;
   font-size: clamp(1.8rem, 7vw, 3.2rem);
-  color: #EAEAEA;
+  color: var(--bg);
   opacity: 0.7;
   padding: 0 2px;
   line-height: 1.05;
@@ -776,7 +780,7 @@ audio {
 /* ── INSTA ── */
 .insta-handle {
   font-family: 'Yeseva One', serif;
-  font-size: 1.7rem;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
   font-weight: 400;
   color: var(--text);
   margin: 6px 0 10px;
@@ -793,7 +797,7 @@ footer {
   font-family: 'Yeseva One', serif;
   font-size: clamp(2.8rem, 10vw, 5.5rem);
   font-weight: 400;
-  color: #EAEAEA;
+  color: var(--bg);
   letter-spacing: -0.01em;
   margin-bottom: 16px;
 }
@@ -907,7 +911,7 @@ footer {
 }
 
 .cal-day.birthday {
-  color: #EAEAEA;
+  color: var(--bg);
   font-weight: 600;
   z-index: 1;
 }
@@ -919,7 +923,7 @@ footer {
   left: 49%;
   transform: translate(-50%, -50%) scale(2.6);
   font-size: 1rem;
-  color: #C08F90;
+  color: var(--accent);
   z-index: -1;
   line-height: 1;
 }
@@ -1009,7 +1013,7 @@ footer {
 #envelope-screen {
   position: fixed;
   inset: 0;
-  background: #C08F90;
+  background: var(--accent);
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -1156,7 +1160,7 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 35%, #C08F90, #a07075);
+  background: radial-gradient(circle at 38% 35%, #6fa67d, #3d6b4a);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1206,7 +1210,7 @@ footer {
 
 /* ── STRIPE-B VERDE OSCURO ── */
 .stripe-b {
-  background: #C08F90;
+  background: var(--accent);
 }
 
 .stripe-b .eyebrow {
@@ -1214,15 +1218,15 @@ footer {
 }
 
 .stripe-b .section-title {
-  color: #f5f0e8;
+  color: var(--bg);
 }
 
 .stripe-b .section-body {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--bg);
 }
 
 .stripe-b .insta-handle {
-  color: #f5f0e8;
+  color: var(--bg);
 }
 
 .stripe-b .card {
@@ -1245,21 +1249,21 @@ footer {
 }
 
 .stripe-b .btn {
-  background: #f5f0e8;
-  color: #C08F90;
-  border-color: #f5f0e8;
+  background: var(--bg);
+  color: var(--accent);
+  border-color: var(--bg);
 }
 
 .stripe-b .btn:hover {
-  background: var(--accent3);
-  border-color: var(--accent3);
-  color: #C08F90;
+  background: var(--bg);
+  border-color: var(--bg);
+  color: var(--accent);
 }
 
 .stripe-b .btn.outline {
   background: transparent;
-  color: #f5f0e8;
-  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--bg);
+  border-color: var(--bg);
 }
 
 .stripe-b .btn.outline:hover {
@@ -1277,6 +1281,6 @@ footer {
 }
 
 .stripe-b .gallery-eyebrow .section-title {
-  color: #f5f0e8;
+  color: var(--bg);
 }
 
